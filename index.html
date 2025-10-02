@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./dist/output.css" rel="stylesheet">
+  <style>
+    .meu-cartao {
+            width: 80%;
+        }
+     @media screen and (min-width: 768px) {
+            .meu-cartao {
+                width: 70%;
+            }
+        }
+  </style>
   <title>Site Aysha</title>
 </head>
-<body style="background-color: #3c3c3c;">
+<body style="background-color: #000">
   <main class="flex items-center justify-center h-screen bg-transparent overflow-hidden">
-    <div class="w-full max-w-[60%] bg-transparent relative">
+    <div class="meu-cartao bg-transparent relative">
       <img class="w-full h-auto" src="cartao.png" alt="">
       <img class="animate-foto absolute h-auto w-[40%] top-[13%] left-[8%]" src="foto1.jpg" alt="">
       <img class="animate-rose absolute h-auto w-[60%] -rotate-28 bottom-[-10%] left-[-25%] [animation-delay:200ms] opacity-0" src="rosa.png" alt="">
