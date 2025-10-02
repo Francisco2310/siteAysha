@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes rose {
+    0% { 
+      transform: translateY(60%) translateX(-100%);
+      opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+      transform: translateY(0) translateX(0);
+    }
+  }
+  @keyframes foto {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes selo {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  }
+  .animate-selo {
+    animation: selo 600ms steps(6, end) forwards;
+  }
+  .animate-foto {
+    animation: foto 500ms steps(6, end) forwards;
+  }
+  .animate-rose {
+    animation: rose 500ms steps(6, end) forwards;
+  }
+}
+

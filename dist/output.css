@@ -1,0 +1,109 @@
+/*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.top-\[-2\%\] {
+  top: -2%;
+}
+.top-\[13\%\] {
+  top: 13%;
+}
+.bottom-\[-10\%\] {
+  bottom: -10%;
+}
+.left-\[-25\%\] {
+  left: -25%;
+}
+.left-\[8\%\] {
+  left: 8%;
+}
+.left-\[44\%\] {
+  left: 44%;
+}
+.flex {
+  display: flex;
+}
+.h-auto {
+  height: auto;
+}
+.h-screen {
+  height: 100vh;
+}
+.w-\[15\%\] {
+  width: 15%;
+}
+.w-\[40\%\] {
+  width: 40%;
+}
+.w-\[60\%\] {
+  width: 60%;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-\[60\%\] {
+  max-width: 60%;
+}
+.-rotate-28 {
+  rotate: calc(28deg * -1);
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.opacity-0 {
+  opacity: 0%;
+}
+.\[animation-delay\:200ms\] {
+  animation-delay: 200ms;
+}
+@layer utilities {
+  @keyframes rose {
+    0% {
+      transform: translateY(60%) translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) translateX(0);
+    }
+  }
+  @keyframes foto {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes selo {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-selo {
+    animation: selo 600ms steps(6, end) forwards;
+  }
+  .animate-foto {
+    animation: foto 500ms steps(6, end) forwards;
+  }
+  .animate-rose {
+    animation: rose 500ms steps(6, end) forwards;
+  }
+}
