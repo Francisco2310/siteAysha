@@ -9,20 +9,68 @@
 .top-\[-2\%\] {
   top: -2%;
 }
+.top-\[3\%\] {
+  top: 3%;
+}
 .top-\[13\%\] {
   top: 13%;
+}
+.top-\[34\%\] {
+  top: 34%;
+}
+.top-\[39\%\] {
+  top: 39%;
+}
+.right-\[-4\%\] {
+  right: -4%;
+}
+.right-\[18\%\] {
+  right: 18%;
 }
 .bottom-\[-10\%\] {
   bottom: -10%;
 }
+.bottom-\[45\%\] {
+  bottom: 45%;
+}
 .left-\[-25\%\] {
   left: -25%;
+}
+.left-\[2\%\] {
+  left: 2%;
 }
 .left-\[8\%\] {
   left: 8%;
 }
+.left-\[10\%\] {
+  left: 10%;
+}
+.left-\[20\%\] {
+  left: 20%;
+}
 .left-\[44\%\] {
   left: 44%;
+}
+.left-\[58\%\] {
+  left: 58%;
+}
+.z-1 {
+  z-index: 1;
+}
+.mb-\[4\] {
+  margin-bottom: 4;
+}
+.mb-\[40v\] {
+  margin-bottom: 40v;
+}
+.mb-\[40vh\] {
+  margin-bottom: 40vh;
+}
+.mb-\[80\] {
+  margin-bottom: 80;
+}
+.mb-\[80px\] {
+  margin-bottom: 80px;
 }
 .flex {
   display: flex;
@@ -33,8 +81,23 @@
 .h-screen {
   height: 100vh;
 }
+.max-h-screen {
+  max-height: 100vh;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-\[15\%\] {
   width: 15%;
+}
+.w-\[20\%\] {
+  width: 20%;
+}
+.w-\[27\%\] {
+  width: 27%;
+}
+.w-\[30\%\] {
+  width: 30%;
 }
 .w-\[40\%\] {
   width: 40%;
@@ -45,8 +108,14 @@
 .w-full {
   width: 100%;
 }
+.-rotate-15 {
+  rotate: calc(15deg * -1);
+}
 .-rotate-28 {
   rotate: calc(28deg * -1);
+}
+.rotate-28 {
+  rotate: 28deg;
 }
 .transform {
   transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -98,14 +167,64 @@
       transform: translateY(0);
     }
   }
-  .animate-selo {
+  @keyframes polaroid1 {
+    0% {
+      transform: rotate(-30deg) translateY(100%) translateX(30%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg) translateY(0) translateX(0);
+    }
+  }
+  @keyframes polaroid2 {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes polaroid3 {
+    0% {
+      transform: rotate(-45deg) translateX(100%) translateY(60%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg) translateY(0) translateX(0);
+    }
+  }
+  .animate-selo.ativo {
     animation: selo 600ms steps(6, end) forwards;
   }
-  .animate-foto {
+  .animate-foto.ativo {
     animation: foto 500ms steps(6, end) forwards;
   }
-  .animate-rose {
+  .animate-rose.ativo {
     animation: rose 500ms steps(6, end) forwards;
+  }
+  .animate-polaroid1.ativo {
+    animation: polaroid1 700ms steps(6, end) forwards;
+  }
+  .animate-polaroid2.ativo {
+    animation: polaroid2 500ms steps(6, end) forwards;
+  }
+  .animate-polaroid3.ativo {
+    animation: polaroid3 700ms steps(6, end) forwards;
+  }
+  .meu-cartao {
+    width: 84%;
+  }
+  @media screen and (min-width: 768px) {
+    .meu-cartao {
+      width: 70%;
+    }
+  }
+  body {
+    background-color: #000;
   }
 }
 @property --tw-rotate-x {

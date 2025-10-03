@@ -4,26 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./dist/output.css" rel="stylesheet">
-  <style>
-    .meu-cartao {
-            width: 80%;
-        }
-     @media screen and (min-width: 768px) {
-            .meu-cartao {
-                width: 70%;
-            }
-        }
-  </style>
   <title>Site Aysha</title>
 </head>
-<body style="background-color: #000">
-  <main class="flex items-center justify-center h-screen bg-transparent overflow-hidden">
+<body>
+  <section class="flex items-center justify-center h-screen mb-[80px] bg-transparent overflow-hidden">
     <div class="meu-cartao bg-transparent relative">
-      <img class="w-full h-auto" src="cartao.png" alt="">
-      <img class="animate-foto absolute h-auto w-[40%] top-[13%] left-[8%]" src="foto1.jpg" alt="">
-      <img class="animate-rose absolute h-auto w-[60%] -rotate-28 bottom-[-10%] left-[-25%] [animation-delay:200ms] opacity-0" src="rosa.png" alt="">
-      <img class="absolute h-auto w-[15%] left-[44%] top-[-2%] animate-selo opacity-0 [animation-delay:200ms]" src="selo.png" alt="">
+      <img class="w-full" src="./assets/section1/cartao.png" alt="">
+      <img class="animate-foto absolute h-auto w-[40%] top-[13%] left-[8%]" src="./assets/section1/foto1.jpg" alt="">
+      <img class="animate-rose absolute h-auto w-[60%] -rotate-28 bottom-[-10%] left-[-25%] [animation-delay:200ms] opacity-0" src="./assets/section1/rosa.png" alt="">
+      <img class="absolute h-auto w-[15%] left-[44%] top-[-2%] animate-selo opacity-0 [animation-delay:200ms]" src="./assets/section1/selo.png" alt="">
     </div>
-  </main>
+  </section>
+
+  <section class="flex items-center justify-center h-screen bg-transparent overflow-hidden">
+    <div class="meu-cartao bg-transparent relative">
+      <img class="w-full" src="assets/section2/livro.png" alt="">
+      <img class="animate-camera absolute bottom-[-10%] right-[-4%] w-[20%] rotate-28" src="assets/section2/camera.png" alt="">
+      <img class="animate-polaroid1 absolute left-[20%] top-[34%] w-[30%] -rotate-15 z-1" src="assets/section2/polaroid1.png" alt="">
+      <img class="animate-polaroid2 absolute left-[10%] top-[-2%] w-[40%]" src="assets/section2/polaroid2.png" alt="">
+      <img class="animate-polaroid3 absolute right-[18%] top-[39%] w-[30%]" src="assets/section2/polaroid3.png" alt="">
+      <img class="absolute left-[58%] bottom-[45%] w-[40%]" src="assets/section2/post.png" alt="">
+      <img class="absolute left-[2%] top-[3%] w-[27%]" src="assets/section2/clip.png" alt="">
+    </div>
+  </section>
+  <script src="src/script.js"></script>
 </body>
 </html>

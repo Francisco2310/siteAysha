@@ -29,16 +29,67 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
   }
+  @keyframes polaroid1 {
+    0% {
+      transform: rotate(-30deg) translateY(100%) translateX(30%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg) translateY(0) translateX(0);
+    }
   }
-  .animate-selo {
+  @keyframes polaroid2 {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes polaroid3 {
+    0% {
+      transform: rotate(-45deg) translateX(100%) translateY(60%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg) translateY(0) translateX(0);
+    }
+  }
+
+  .animate-selo.ativo {
     animation: selo 600ms steps(6, end) forwards;
   }
-  .animate-foto {
+  .animate-foto.ativo {
     animation: foto 500ms steps(6, end) forwards;
   }
-  .animate-rose {
+  .animate-rose.ativo {
     animation: rose 500ms steps(6, end) forwards;
   }
-}
+  .animate-polaroid1.ativo{
+    animation: polaroid1 700ms steps(6, end) forwards;
+  }
+  .animate-polaroid2.ativo{
+    animation: polaroid2 500ms steps(6, end) forwards;
+  }
+  .animate-polaroid3.ativo{
+    animation: polaroid3 700ms steps(6, end) forwards;
+  }
 
+.meu-cartao {
+        width: 84%;
+    }
+  @media screen and (min-width: 768px) {
+        .meu-cartao {
+            width: 70%;
+        }
+    }
+
+body {
+  background-color: #000;
+}}
