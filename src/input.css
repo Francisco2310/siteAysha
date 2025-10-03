@@ -90,6 +90,15 @@
         }
     }
 
+section {
+  height: 50vh;
+}
+  @media (min-width: 768px) {
+    section {
+      height: 100vh;
+    }
+  }
+
 body {
   background-color: #000;
 }}

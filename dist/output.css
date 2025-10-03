@@ -57,18 +57,6 @@
 .z-1 {
   z-index: 1;
 }
-.mb-\[4\] {
-  margin-bottom: 4;
-}
-.mb-\[40v\] {
-  margin-bottom: 40v;
-}
-.mb-\[40vh\] {
-  margin-bottom: 40vh;
-}
-.mb-\[80\] {
-  margin-bottom: 80;
-}
 .mb-\[80px\] {
   margin-bottom: 80px;
 }
@@ -77,15 +65,6 @@
 }
 .h-auto {
   height: auto;
-}
-.h-screen {
-  height: 100vh;
-}
-.max-h-screen {
-  max-height: 100vh;
-}
-.min-h-screen {
-  min-height: 100vh;
 }
 .w-\[15\%\] {
   width: 15%;
@@ -221,6 +200,14 @@
   @media screen and (min-width: 768px) {
     .meu-cartao {
       width: 70%;
+    }
+  }
+  section {
+    height: 50vh;
+  }
+  @media (min-width: 768px) {
+    section {
+      height: 100vh;
     }
   }
   body {
