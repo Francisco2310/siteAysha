@@ -61,6 +61,44 @@
       transform: rotate(0deg) translateY(0) translateX(0);
     }
   }
+  @keyframes camera {
+    0% {
+      transform: translateY(100%) translateX(-30%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) translateX(0);
+    }
+  }
+  @keyframes filme {
+    0% {
+      transform: rotate(-30deg) translateY(100%) translateX(30%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(0) translateY(0) translateX(0);
+    }
+  }
+  @keyframes knight {
+      from { 
+        opacity: 0; 
+      }
+      to {
+         opacity: 1;
+      }
+  }
+  @keyframes fita {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   .animate-selo.ativo {
     animation: selo 600ms steps(6, end) forwards;
@@ -80,6 +118,24 @@
   .animate-polaroid3.ativo{
     animation: polaroid3 700ms steps(6, end) forwards;
   }
+  .animate-camera.ativo{
+    animation: camera 500ms steps(6, end) forwards;
+  }
+  .animate-filme.ativo{
+    animation: filme 700ms steps(6, end) forwards;
+  }
+  .animate-knight.ativo{
+    animation: knight 1.2s forwards;
+  }
+  .animate-fita.ativo{
+    animation: fita 500ms steps(6, end) forwards;
+  }
+    .animate-fita2.ativo{
+    animation: fita 500ms steps(6, end) forwards;
+  }
+    .animate-fita3.ativo{
+    animation: fita 500ms steps(6, end) forwards;
+  }
 
 .meu-cartao {
         width: 84%;
@@ -91,14 +147,17 @@
     }
 
 section {
-  height: 50vh;
+  height: 80vh;
 }
   @media (min-width: 768px) {
     section {
-      height: 100vh;
+      height: 113vh;
     }
   }
 
 body {
-  background-color: #000;
+  background-image: url("../bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }}

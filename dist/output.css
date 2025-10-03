@@ -9,8 +9,17 @@
 .top-\[-2\%\] {
   top: -2%;
 }
+.top-\[-3\%\] {
+  top: -3%;
+}
+.top-\[1\%\] {
+  top: 1%;
+}
 .top-\[3\%\] {
   top: 3%;
+}
+.top-\[9\%\] {
+  top: 9%;
 }
 .top-\[13\%\] {
   top: 13%;
@@ -24,17 +33,38 @@
 .right-\[-4\%\] {
   right: -4%;
 }
+.right-\[17\%\] {
+  right: 17%;
+}
 .right-\[18\%\] {
   right: 18%;
 }
+.right-\[71\%\] {
+  right: 71%;
+}
 .bottom-\[-10\%\] {
   bottom: -10%;
+}
+.bottom-\[-20\%\] {
+  bottom: -20%;
+}
+.bottom-\[0\%\] {
+  bottom: 0%;
+}
+.bottom-\[17\%\] {
+  bottom: 17%;
+}
+.bottom-\[38\%\] {
+  bottom: 38%;
 }
 .bottom-\[45\%\] {
   bottom: 45%;
 }
 .left-\[-25\%\] {
   left: -25%;
+}
+.left-\[0\] {
+  left: 0;
 }
 .left-\[2\%\] {
   left: 2%;
@@ -45,26 +75,50 @@
 .left-\[10\%\] {
   left: 10%;
 }
+.left-\[15\%\] {
+  left: 15%;
+}
 .left-\[20\%\] {
   left: 20%;
+}
+.left-\[35\%\] {
+  left: 35%;
 }
 .left-\[44\%\] {
   left: 44%;
 }
+.left-\[49\%\] {
+  left: 49%;
+}
+.left-\[52\%\] {
+  left: 52%;
+}
 .left-\[58\%\] {
   left: 58%;
+}
+.left-\[64\%\] {
+  left: 64%;
 }
 .z-1 {
   z-index: 1;
 }
-.mb-\[80px\] {
-  margin-bottom: 80px;
+.z-2 {
+  z-index: 2;
+}
+.mb-\[20vw\] {
+  margin-bottom: 20vw;
 }
 .flex {
   display: flex;
 }
 .h-auto {
   height: auto;
+}
+.w-\[5\%\] {
+  width: 5%;
+}
+.w-\[10\%\] {
+  width: 10%;
 }
 .w-\[15\%\] {
   width: 15%;
@@ -81,8 +135,14 @@
 .w-\[40\%\] {
   width: 40%;
 }
+.w-\[50\%\] {
+  width: 50%;
+}
 .w-\[60\%\] {
   width: 60%;
+}
+.w-\[100\%\] {
+  width: 100%;
 }
 .w-full {
   width: 100%;
@@ -90,11 +150,17 @@
 .-rotate-15 {
   rotate: calc(15deg * -1);
 }
+.-rotate-25 {
+  rotate: calc(25deg * -1);
+}
 .-rotate-28 {
   rotate: calc(28deg * -1);
 }
 .rotate-28 {
   rotate: 28deg;
+}
+.rotate-142 {
+  rotate: 142deg;
 }
 .transform {
   transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -116,6 +182,15 @@
 }
 .\[animation-delay\:200ms\] {
   animation-delay: 200ms;
+}
+.\[animation-delay\:400ms\] {
+  animation-delay: 400ms;
+}
+.\[animation-delay\:800ms\] {
+  animation-delay: 800ms;
+}
+.\[animation-delay\:1200ms\] {
+  animation-delay: 1200ms;
 }
 @layer utilities {
   @keyframes rose {
@@ -176,6 +251,44 @@
       transform: rotate(0deg) translateY(0) translateX(0);
     }
   }
+  @keyframes camera {
+    0% {
+      transform: translateY(100%) translateX(-30%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) translateX(0);
+    }
+  }
+  @keyframes filme {
+    0% {
+      transform: rotate(-30deg) translateY(100%) translateX(30%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(0) translateY(0) translateX(0);
+    }
+  }
+  @keyframes knight {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fita {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   .animate-selo.ativo {
     animation: selo 600ms steps(6, end) forwards;
   }
@@ -194,6 +307,24 @@
   .animate-polaroid3.ativo {
     animation: polaroid3 700ms steps(6, end) forwards;
   }
+  .animate-camera.ativo {
+    animation: camera 500ms steps(6, end) forwards;
+  }
+  .animate-filme.ativo {
+    animation: filme 700ms steps(6, end) forwards;
+  }
+  .animate-knight.ativo {
+    animation: knight 1.2s forwards;
+  }
+  .animate-fita.ativo {
+    animation: fita 500ms steps(6, end) forwards;
+  }
+  .animate-fita2.ativo {
+    animation: fita 500ms steps(6, end) forwards;
+  }
+  .animate-fita3.ativo {
+    animation: fita 500ms steps(6, end) forwards;
+  }
   .meu-cartao {
     width: 84%;
   }
@@ -203,15 +334,18 @@
     }
   }
   section {
-    height: 50vh;
+    height: 80vh;
   }
   @media (min-width: 768px) {
     section {
-      height: 100vh;
+      height: 113vh;
     }
   }
   body {
-    background-color: #000;
+    background-image: url("../bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 @property --tw-rotate-x {
