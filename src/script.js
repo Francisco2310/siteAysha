@@ -15,11 +15,12 @@ carta.addEventListener("click", () => {
    cliques++;
    if (cliques >= 3) {
     carta.src = "carta-aberta.png";
-    overlay.style.display = "none";
-    conteudo.style.display = "block";
-    void conteudo.offsetWidth;
-    conteudo.classList.add("fade-in");
-
+    setTimeout(() => {
+      overlay.style.display = "none";
+      conteudo.style.display = "block";
+      void conteudo.offsetWidth;
+      conteudo.classList.add("fade-in");
+    }, 200);
   }
 });
 
