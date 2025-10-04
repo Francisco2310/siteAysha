@@ -4,50 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./dist/output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Site Aysha</title>
 </head>
 <body>
-  <section class="flex items-center justify-center mb-[20vw] bg-transparent">
-    <div class="meu-cartao bg-transparent relative">
-      <img class="w-full" src="./assets/section1/cartao.png" alt="">
-      <img class="animate-foto absolute h-auto w-[40%] top-[13%] left-[8%]" src="./assets/section1/foto1.jpg" alt="">
-      <img class="animate-rose absolute h-auto w-[60%] -rotate-28 bottom-[-10%] left-[-25%] [animation-delay:200ms] opacity-0" src="./assets/section1/rosa.png" alt="">
-      <img class="absolute h-auto w-[15%] left-[44%] top-[-2%] animate-selo opacity-0 [animation-delay:200ms]" src="./assets/section1/selo.png" alt="">
-    </div>
-  </section>
+  <div id="overlay" class="fixed inset-0 grid place-items-center z-50">
+    <img id="carta" src="carta.png" alt="Carta">
+  </div>
 
-  <section class="flex items-center justify-center bg-transparent mb-[20vw]">
-    <div class="meu-cartao bg-transparent relative">
-      <img class="w-full" src="assets/section2/livro.png" alt="">
-      <img class="animate-camera opacity-0 absolute bottom-[-10%] right-[-4%] w-[20%] rotate-28 [animation-delay:200ms]" src="assets/section2/camera.png" alt="">
-      <img class="animate-polaroid1 absolute left-[20%] top-[34%] w-[30%] -rotate-15 z-1" src="assets/section2/polaroid1.png" alt="">
-      <img class="animate-polaroid2 absolute left-[10%] top-[-2%] w-[40%]" src="assets/section2/polaroid2.png" alt="">
-      <img class="animate-polaroid3 absolute right-[18%] top-[39%] w-[30%]" src="assets/section2/polaroid3.png" alt="">
-      <img class="absolute left-[58%] bottom-[45%] w-[40%]" src="assets/section2/post.png" alt="">
-      <img class="absolute left-[2%] top-[3%] w-[27%]" src="assets/section2/clip.png" alt="">
-    </div>
-  </section>
+  <div id="conteudo" style="display: none;">
+    <section class="flex items-center justify-center mb-[20vw] bg-transparent">
+      <div class="meu-cartao bg-transparent relative">
+        <img class="w-full" src="./assets/section1/cartao.png" alt="">
+        <img class="animate-foto absolute h-auto w-[40%] top-[13%] left-[8%]" src="./assets/section1/foto1.jpg" alt="">
+        <img class="animate-rose absolute h-auto w-[60%] -rotate-28 bottom-[-10%] left-[-25%] [animation-delay:200ms] opacity-0" src="./assets/section1/rosa.png" alt="">
+        <img class="absolute h-auto w-[15%] left-[44%] top-[-2%] animate-selo opacity-0 [animation-delay:200ms]" src="./assets/section1/selo.png" alt="">
+      </div>
+    </section>
 
-  <section class="flex items-center justify-center bg-transparent mb-[20vw]">
-    <div class="meu-cartao bg-transparent relative">
-      <img class="w-full" src="assets/section3/placeholder.svg" alt="">
-      <img class="absolute left-[35%] bottom-[0%] w-[50%]" src="assets/section3/carta.png" alt="">
-      <img class="animate-filme opacity-0 absolute left-[15%] top-[9%] w-[30%] -rotate-15" src="assets/section3/filme.png" alt="">
-      <img class="absolute right-[17%] top-[-3%] w-[10%] rotate-142" src="assets/section3/ingresso.png" alt="">
-      <object class="absolute animate-knight opacity-0 -rotate-25 right-[71%] top-[1%] w-[5%] [animation-delay:1200ms]" type="image/svg+xml" data="assets/section3/knight.svg"></object>
-    </div>
-  </section>
+    <section class="flex items-center justify-center bg-transparent mb-[20vw]">
+      <div class="meu-cartao bg-transparent relative">
+        <img class="w-full" src="assets/section2/livro.png" alt="">
+        <img class="animate-camera opacity-0 absolute bottom-[-10%] right-[-4%] w-[20%] rotate-28 [animation-delay:200ms]" src="assets/section2/camera.png" alt="">
+        <img class="animate-polaroid1 absolute left-[20%] top-[34%] w-[30%] -rotate-15 z-1" src="assets/section2/polaroid1.png" alt="">
+        <img class="animate-polaroid2 absolute left-[10%] top-[-2%] w-[40%]" src="assets/section2/polaroid2.png" alt="">
+        <img class="animate-polaroid3 absolute right-[18%] top-[39%] w-[30%]" src="assets/section2/polaroid3.png" alt="">
+        <img class="absolute left-[58%] bottom-[45%] w-[40%]" src="assets/section2/post.png" alt="">
+        <img class="absolute left-[2%] top-[3%] w-[27%]" src="assets/section2/clip.png" alt="">
+      </div>
+    </section>
 
-  <section class="flex items-center justify-center bg-transparent overflow-hidden">
-    <div class="meu-cartao bg-transparent relative">
-      <img class="w-full" src="assets/section4/quadro.png" alt="">
-      <img class="absolute bottom-[-20%] left-[0] w-[100%]" src="assets/section4/mesa.png" alt="">
-      <img class="animate-fita opacity-0 absolute bottom-[17%] left-[52%] w-[20%] z-2" src="assets/section4/fita1.png" alt="">
-      <img class="animate-fita2 opacity-0 [animation-delay:400ms] absolute bottom-[38%] left-[64%] w-[20%] z-1" src="assets/section4/fita2.png" alt="">
-      <img class="animate-fita3 opacity-0 [animation-delay:800ms] absolute bottom-[45%] left-[49%] w-[20%]" src="assets/section4/fita3.png" alt="">
-    </div>
-  </section>
+    <section class="flex items-center justify-center bg-transparent mb-[20vw]">
+      <div class="meu-cartao bg-transparent relative">
+        <img class="w-full" src="assets/section3/placeholder.svg" alt="">
+        <img class="absolute left-[35%] bottom-[0%] w-[50%]" src="assets/section3/carta.png" alt="">
+        <img class="animate-filme opacity-0 absolute left-[15%] top-[9%] w-[30%] -rotate-15" src="assets/section3/filme.png" alt="">
+        <img class="absolute right-[17%] top-[-3%] w-[10%] rotate-142" src="assets/section3/ingresso.png" alt="">
+        <object class="absolute animate-knight opacity-0 -rotate-25 right-[71%] top-[1%] w-[5%] [animation-delay:1200ms]" type="image/svg+xml" data="assets/section3/knight.svg"></object>
+      </div>
+    </section>
 
+    <section class="flex relative items-center justify-center bg-transparent overflow-hidden">
+      <div class="meu-cartao bg-transparent relative">
+        <img class="w-full" src="assets/section4/quadro.png" alt="">
+        <img class="absolute bottom-[-20%] left-[0] w-[100%]" src="assets/section4/mesa.png" alt="">
+        <img class="animate-fita opacity-0 absolute bottom-[17%] left-[52%] w-[20%] z-2" src="assets/section4/fita1.png" alt="">
+        <img class="animate-fita2 opacity-0 [animation-delay:400ms] absolute bottom-[38%] left-[64%] w-[20%] z-1" src="assets/section4/fita2.png" alt="">
+        <img class="animate-fita3 opacity-0 [animation-delay:800ms] absolute bottom-[45%] left-[49%] w-[20%]" src="assets/section4/fita3.png" alt="">
+      </div>
+    </section>
+   </div> 
   <script src="src/script.js"></script>
 </body>
 </html>
