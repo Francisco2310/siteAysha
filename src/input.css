@@ -152,6 +152,9 @@
   }
     #carta {
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    max-width: 80%;
   }
     #carta:active {
     animation: bounce 0.3s ease;
