@@ -318,6 +318,14 @@
       transform: scale(1);
     }
   }
+  @keyframes fadeIn {
+    from {
+      opacity: 0.90;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .animate-selo.ativo {
     animation: selo 600ms steps(6, end) forwards;
   }
@@ -370,6 +378,9 @@
     .meu-cartao {
       width: 70%;
     }
+  }
+  .fade-in {
+    animation: fadeIn 500ms ease-in forwards;
   }
   section {
     height: 80vh;

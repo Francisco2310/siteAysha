@@ -2,8 +2,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('ativo');
-    } else {
-      entry.target.classList.remove('ativo');
     }
   });
 });
@@ -17,10 +15,11 @@ carta.addEventListener("click", () => {
    cliques++;
    if (cliques >= 3) {
     carta.src = "carta-aberta.png";
-    setTimeout(() => {
-      overlay.style.display = "none";
-      conteudo.style.display = "block";
-    }, 500);
+    overlay.style.display = "none";
+    conteudo.style.display = "block";
+    void conteudo.offsetWidth;
+    conteudo.classList.add("fade-in");
+
   }
 });
 
